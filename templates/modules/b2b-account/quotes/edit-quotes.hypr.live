@@ -2,22 +2,23 @@
   QuoteTest 1234
   <button class="mz-button">{{labels.exitQuote}}</button>
 </h2>
-
+<div>{{model.name}}</div>
+<div>{{model.id}}</div>
 <ul class="mz-orderlist edit-quote-form">
   <li>
-    {% include "modules/b2b-account/quotes/quote-details" with model=model.editingContact %}
+    {% include "modules/b2b-account/quotes/quote-details" with model=model %}
   </li>
   <li>
-    {% include "modules/b2b-account/quotes/quote-summary" with model=model.editingContact %}
+    {% include "modules/b2b-account/quotes/quote-summary" with model=model %}
   </li>
   <li>
-    {% include "modules/b2b-account/quotes/quote-shipping" with model=model.editingContact %}
+    {% include "modules/b2b-account/quotes/quote-shipping" with model=model %}
   </li>
   <li>
-    {% include "modules/b2b-account/quotes/quote-comments" with model=model.editingContact %}
+    {% include "modules/b2b-account/quotes/quote-comments" with model=model %}
   </li>
   <li>
-    {% include "modules/b2b-account/quotes/quote-history" with model=model.editingContact %}
+    {% include "modules/b2b-account/quotes/quote-history" with model=model %}
   </li>
   <li>
     <div class="mz-quote-actions">

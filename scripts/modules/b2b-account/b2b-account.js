@@ -49,12 +49,6 @@ define([
                     model: Orders.OrdersModel.fromCurrent()
                 })
         },
-        {
-            name: 'Quotes',
-            view: new Quotes.QuoteEditView({
-                model: new Quotes.QuoteModel({})
-            })
-        },
             {
                 name: 'Returns',
                 view: new Returns.ReturnsView({

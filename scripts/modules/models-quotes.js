@@ -30,6 +30,7 @@ define(["modules/api", 'underscore', "modules/backbone-mozu", "hyprlive", "modul
 
         Quote = Backbone.MozuModel.extend({
             mozuType: 'quote',
+            idAttribute: 'id',
             relations: {
                 items: QuoteItemsList
             },
