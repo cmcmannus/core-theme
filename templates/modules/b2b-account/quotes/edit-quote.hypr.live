@@ -1,9 +1,7 @@
 ﻿<h2 class="quote-name">
-  QuoteTest 1234
+  {{model.name}}
   <button class="mz-button">{{labels.exitQuote}}</button>
 </h2>
-<div>{{model.name}}</div>
-<div>{{model.id}}</div>
 <ul class="mz-orderlist edit-quote-form">
   <li>
     {% include "modules/b2b-account/quotes/quote-details" with model=model %}
