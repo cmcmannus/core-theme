@@ -48,13 +48,13 @@ define([
                 view: new Orders.OrdersView({
                     model: Orders.OrdersModel.fromCurrent()
                 })
-        },
-        {
-            name: 'Quotes',
-            view: new Quotes.QuoteEditView({
-                model: new Quotes.QuoteModel({})
-            })
-        },
+            },
+            {
+                name: 'Quotes',
+                view: new Quotes.QuotesView({
+                    model: CustomerModels.EditableCustomer.fromCurrent()
+                })
+            },
             {
                 name: 'Returns',
                 view: new Returns.ReturnsView({
